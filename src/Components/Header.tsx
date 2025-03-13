@@ -24,14 +24,14 @@ function Header() {
   return (
     <>
       <header className="bg-[hsl(356,100%,66%)]">
-        <nav className="px-5 py-5 md:px-36 md:py-10 flex items-center justify-between">
+      <nav className="py-[25px] px-4 md:px-[30px] lg:px-[65px] xl:px-[150px] flex items-center justify-between">
           <div className="flex items-center gap-10">
             <Image
               src={Images.Logo1}
               alt="logo-image"
               width={150}
               height={40}
-              className="max-w-none md:max-w-full"
+              className="max-w-none md:max-w-full w-[100px] md:w-[150px]"
             />
             <ul className="hidden md:flex items-center gap-5 pl-5 text-gray-200 font-semibold ">
               {navItems.map((item, index) => (
