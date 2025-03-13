@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+// import Link from "next/link";
 import Images from "@/images";
 
 function Footer() {
@@ -46,9 +46,6 @@ function Footer() {
             </div>
           </div>
         </nav>
-        {/* <div>
-            boyuretyj
-        </div> */}
       </footer>
     </>
   );
