@@ -24,14 +24,14 @@ function Header() {
   return (
     <>
       <header className="bg-[hsl(356,100%,66%)]">
-      <nav className="py-[25px] px-4 md:px-[30px] lg:px-[65px] xl:px-[150px] flex items-center justify-between">
+        <nav className="py-[25px] px-4 md:px-[30px] lg:px-[65px] xl:px-[150px] flex items-center justify-between">
           <div className="flex items-center gap-10">
             <Image
               src={Images.Logo1}
               alt="logo-image"
-              width={150}
+              width={100}
               height={40}
-              className="max-w-none md:max-w-full w-[100px] md:w-[150px]"
+              className="max-w-none md:max-w-full"
             />
             <ul className="hidden md:flex items-center gap-5 pl-5 text-gray-200 font-semibold ">
               {navItems.map((item, index) => (
@@ -74,36 +74,39 @@ function Header() {
             <Image src={Images.Close} alt="close-menu" />
           </button>
 
-          <ul className="flex flex-col gap-5 text-gray-800 font-semibold w-full pt-10">
-            {navItems.map((item, index) => (
-              <li key={index}>
-                <Link
-                  href={item.link}
-                  className="hover:text-[hsl(356,100%,66%)] transition duration-300 block"
-                  onClick={toggleMenu} // Close menu on click
-                >
-                  {item.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <div className="h-screen bg-white w-full flex flex-col gap-6 pt-10 px-5">
+            {/* Navigation Items */}
+            <ul className="flex flex-col gap-5 text-gray-800 font-semibold w-full">
+              {navItems.map((item, index) => (
+                <li key={index}>
+                  <Link
+                    href={item.link}
+                    className="hover:text-[hsl(356,100%,66%)] transition duration-300 block"
+                    onClick={toggleMenu}
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
 
-          {/* Auth Links */}
-          <div className="flex flex-col gap-4 w-full">
-            <Link
-              href="/login"
-              className="text-gray-800 font-semibold hover:text-[hsl(356,100%,66%)] transition duration-300 block"
-              onClick={toggleMenu} // Close menu on click
-            >
-              Login
-            </Link>
-            <Link
-              href="/signup"
-              className="bg-[hsl(356,100%,66%)] text-white text-center py-2 rounded-3xl font-semibold hover:bg-black transition duration-300 block"
-              onClick={toggleMenu} // Close menu on click
-            >
-              Sign up
-            </Link>
+            {/* Auth Links */}
+            <div className="flex flex-col gap-4 w-full">
+              <Link
+                href="/login"
+                className="text-gray-800 font-semibold hover:text-[hsl(356,100%,66%)] transition duration-300 block"
+                onClick={toggleMenu}
+              >
+                Login
+              </Link>
+              <Link
+                href="/signup"
+                className="bg-[hsl(356,100%,66%)] text-white text-center py-2 rounded-3xl font-semibold hover:bg-black transition duration-300 block"
+                onClick={toggleMenu}
+              >
+                Sign up
+              </Link>
+            </div>
           </div>
         </div>
       </header>
