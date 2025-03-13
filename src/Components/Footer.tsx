@@ -46,6 +46,9 @@ function Footer() {
             </div>
           </div>
         </nav>
+        {/* <div>
+            boyuretyj
+        </div> */}
       </footer>
     </>
   );
