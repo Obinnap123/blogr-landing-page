@@ -29,8 +29,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+       <div className="bg-[hsl(356,100%,66%)] text-white rounded-bl-[80px] min-h-[90vh]">
         <Header />
-        {children}
+        <main>{children}</main>
+        </div>
         <Footer />
       </body>
     </html>
