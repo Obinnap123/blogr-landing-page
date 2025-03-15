@@ -1,12 +1,11 @@
 // import Image from "next/image";
 
-import HeroSection from "@/Components/HeroSection";
-
-// import bgPatternCircles from "../images/bg-pattern-circles.svg";
+import FirstSection from "@/Components/FirstSection";
 export default function Home() {
   return (
     <>
-      <HeroSection />
+      <FirstSection />
+      
     </>
   );
 }
