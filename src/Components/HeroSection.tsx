@@ -4,7 +4,7 @@ function HeroSection() {
   return (
     <>
       <div className="pt-[30px] px-4 md:pt-[90px] text-center">
-        <h1 className="text-[35px] md:text-[50px] pb-5 md:leading-[70px]">A Modern publishing platform</h1>
+        <h1 className="text-[35px] md:text-[50px] pb-5 md:leading-[70px] xl:text-[60px]">A Modern publishing platform</h1>
         <h3 className="text-[20px] md:text-2xl pb-8">Grow your audience and build your online brand</h3>
         <div className="flex justify-center gap-[10px]">
           <Link
