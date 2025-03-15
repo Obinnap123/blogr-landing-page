@@ -3,6 +3,7 @@ import Hamburger from './icon-hamburger.svg';
 import Close from'./icon-close.svg';
 import Circle from './bg-pattern-circles.svg'
 import Editor1 from './illustration-editor-desktop.svg'
+import Editor2 from './illustration-editor-mobile.svg'
 
 // Define an interface for the Images object
 interface Images {
@@ -11,6 +12,7 @@ interface Images {
     Close:string;
     Circle:string;
     Editor1:string;
+    Editor2:string;
     // Add more images here if needed
   }
   
@@ -21,6 +23,7 @@ interface Images {
     Close,
     Circle,
     Editor1,
+    Editor2,
     // Add more images here if needed
   };
 

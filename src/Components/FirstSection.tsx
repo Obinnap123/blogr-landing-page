@@ -5,7 +5,7 @@ function FirstSection() {
   return (
     <>
       {/* Heading */}
-      <h2 className="text-center px-4 md:px-[0] mt-[50px] md:mt-[150px] text-4xl text-[hsl(208,49%,24%)] dark:text-darkText font-semibold">
+      <h2 className="text-center px-4 md:px-0 mt-[50px] md:mt-[150px] text-4xl text-[hsl(208,49%,24%)] dark:text-darkText font-semibold">
         Design for the future
       </h2>
 
@@ -39,13 +39,20 @@ function FirstSection() {
         </div>
 
         {/* Image Section */}
-        <div className="relative h-[380px] md:h-[500px] w-full md:overflow-hidden order-first md:order-last">
+        <div className=" relative h-[350px] md:h-[500px] w-full md:overflow-hidden order-first md:order-last">
           <Image
             src={Images.Editor1}
-            alt="logo-image"
-            width={500}
-            height={40}
-            className="px-4 pt-[30px] md:pt[0] md:px-0 absolute top-0 md:right-[-150px] md:w-[1000px] h-auto"
+            alt="editor-preview"
+            width={1000}
+            height={500}
+            className="px-4 pt-[30px] md:pt-0 md:px-0 absolute top-0 md:right-[-150px] md:w-[1000px] h-auto hidden md:block"
+          />
+          <Image
+            src={Images.Editor2}
+            alt="editor-preview"
+            width={1000}
+            height={500}
+            className="px-4 pt-[50px] absolute top-0 h-auto md:hidden"
           />
         </div>
       </div>
