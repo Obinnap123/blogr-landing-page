@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Overpass } from "next/font/google";
 import "./globals.css";
 import Header from "@/Components/Header";
 import Footer from "@/Components/Footer";
 import HeroSection from "@/Components/HeroSection";
+
+// Import Overpass font
+const overpass = Overpass({ subsets: ["latin"], weight: ["400", "700"] });
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,11 +31,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${overpass.className} antialiased`}
       >
-       <div className="bg-[hsl(356,100%,66%)] text-white rounded-bl-[80px] min-h-[70vh] md:min-h-[90vh]">
-        <Header />
-        <HeroSection />
+        <div className="bg-[hsl(356,100%,66%)] text-white rounded-bl-[80px] min-h-[70vh] md:min-h-[90vh]">
+          <Header />
+          <HeroSection />
         </div>
         <main>{children}</main>
         <Footer />
