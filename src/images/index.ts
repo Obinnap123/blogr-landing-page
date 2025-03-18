@@ -4,6 +4,7 @@ import Close from'./icon-close.svg';
 import Circle from './bg-pattern-circles.svg'
 import Editor1 from './illustration-editor-desktop.svg'
 import Editor2 from './illustration-editor-mobile.svg'
+import Phone from './illustration-phones.svg'
 
 // Define an interface for the Images object
 interface Images {
@@ -13,6 +14,7 @@ interface Images {
     Circle:string;
     Editor1:string;
     Editor2:string;
+    Phone:string;
     // Add more images here if needed
   }
   
@@ -24,6 +26,7 @@ interface Images {
     Circle,
     Editor1,
     Editor2,
+    Phone,
     // Add more images here if needed
   };
 
