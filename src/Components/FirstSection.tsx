@@ -9,8 +9,8 @@ function FirstSection() {
       </h2>
 
       <div className="flex flex-col lg:flex-row justify-center lg:justify-between">
-        <div className="px-4 pt-[50px] sm:pt-[50px] flex flex-col items-center text-center md:px-0 md:pt-[75px] lg:pl-[65px] lg:pt-0 lg:text-left xl:pl-[150px]">
-          <div className="pb-[50px]">
+        <div className="px-4 pt-[50px] sm:pt-[50px] flex flex-col items-center text-center md:px-0  lg:pl-[65px] lg:pt-0 lg:text-left xl:pl-[150px]">
+          <div className="pb-[50px] md:pt-[75px]">
             <h2 className="pb-[30px] text-[hsl(208,49%,24%)] dark:text-darkText text-2xl">
               Introducing an extensible editor
             </h2>
@@ -36,7 +36,7 @@ function FirstSection() {
           </div>
         </div>
 
-        <div className=" relative h-[350px] custom-height lg:h-[700px] w-full flex justify-center lg:overflow-hidden order-first lg:order-last">
+        <div className=" relative h-[350px] xs:h-[400px] lg:h-[700px] w-full flex justify-center lg:overflow-hidden order-first lg:order-last">
           <Image
             src={Images.Editor1}
             alt="editor-preview"

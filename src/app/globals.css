@@ -1,7 +1,6 @@
 @import "tailwindcss";
 
-
-*{
+* {
   box-sizing: border-box;
 }
 :root {
@@ -30,7 +29,8 @@ body {
 }
 
 @media (min-width: 540px) {
-  .custom-height {
+  .xs-h {
     height: 400px;
   }
 }
+
