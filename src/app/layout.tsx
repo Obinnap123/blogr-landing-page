@@ -33,7 +33,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${overpass.className} antialiased`}
       >
-        <div className="bg-[hsl(356,100%,66%)] text-white rounded-bl-[80px] min-h-[70vh] md:min-h-[90vh]">
+        <div className="bg-[hsl(356,100%,66%)] text-white rounded-bl-[80px] min-h-[70vh] md:min-h-[50vh] lg:min-h-[60vh] xl:min-h-[80vh]">
           <Header />
           <HeroSection />
         </div>
